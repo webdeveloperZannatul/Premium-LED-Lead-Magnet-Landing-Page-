@@ -1,0 +1,2319 @@
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LED Solutions Canberra — Premium Lighting Design & Installation</title>
+<meta name="description" content="Canberra's trusted LED lighting specialists. 14 years, 57,000+ lights installed. Design, supply and install better lighting for homes and businesses.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --ivory: #FAF8F5;
+  --ivory-dark: #F3EFEA;
+  --charcoal: #1A1A1A;
+  --charcoal-light: #2D2D2D;
+  --charcoal-mid: #4A4A4A;
+  --charcoal-soft: #6B6B6B;
+  --bronze: #B8860B;
+  --bronze-light: #C9A96E;
+  --bronze-dark: #8B6914;
+  --champagne: #D4B896;
+  --white: #FFFFFF;
+  --shadow-sm: 0 1px 3px rgba(26,26,26,0.06);
+  --shadow-md: 0 4px 16px rgba(26,26,26,0.08);
+  --shadow-lg: 0 8px 32px rgba(26,26,26,0.1);
+  --shadow-xl: 0 16px 48px rgba(26,26,26,0.12);
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+html { scroll-behavior: smooth; font-size: 16px; }
+body {
+  font-family: var(--font-sans);
+  background: var(--ivory);
+  color: var(--charcoal);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+img { max-width: 100%; display: block; }
+a { text-decoration: none; color: inherit; }
+button { cursor: pointer; border: none; font-family: inherit; }
+ul { list-style: none; }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.container-narrow {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ===== HEADER ===== */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: rgba(250, 248, 245, 0.95);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(26,26,26,0.06);
+  transition: var(--transition);
+}
+
+.header.scrolled {
+  box-shadow: var(--shadow-md);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--charcoal);
+}
+
+.logo-icon {
+  width: 36px;
+  height: 36px;
+  background: var(--charcoal);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--bronze-light);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.logo-text span {
+  display: block;
+  font-size: 0.55rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--charcoal-soft);
+  margin-top: -2px;
+}
+
+.nav-desktop {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav-desktop a {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--charcoal-mid);
+  transition: var(--transition);
+  position: relative;
+}
+
+.nav-desktop a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 1.5px;
+  background: var(--bronze);
+  transition: var(--transition);
+}
+
+.nav-desktop a:hover { color: var(--charcoal); }
+.nav-desktop a:hover::after { width: 100%; }
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: var(--radius-sm);
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: var(--transition);
+  white-space: nowrap;
+}
+
+.btn-primary {
+  background: var(--bronze);
+  color: var(--white);
+}
+
+.btn-primary:hover {
+  background: var(--bronze-dark);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(184,134,11,0.3);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--charcoal);
+  border: 1.5px solid rgba(26,26,26,0.15);
+}
+
+.btn-secondary:hover {
+  border-color: var(--charcoal);
+  background: var(--white);
+}
+
+.btn-outline-light {
+  background: transparent;
+  color: var(--white);
+  border: 1.5px solid rgba(255,255,255,0.3);
+}
+
+.btn-outline-light:hover {
+  background: rgba(255,255,255,0.1);
+  border-color: rgba(255,255,255,0.6);
+}
+
+.btn-dark {
+  background: var(--charcoal);
+  color: var(--white);
+}
+
+.btn-dark:hover {
+  background: var(--charcoal-light);
+  transform: translateY(-1px);
+}
+
+.btn-lg {
+  padding: 16px 32px;
+  font-size: 1rem;
+  border-radius: var(--radius-md);
+}
+
+.btn-arrow::after {
+  content: '→';
+  transition: var(--transition);
+}
+
+.btn-arrow:hover::after {
+  transform: translateX(3px);
+}
+
+.header-phone {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--charcoal-mid);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.header-phone svg { width: 16px; height: 16px; }
+
+.mobile-toggle {
+  display: none;
+  background: none;
+  padding: 8px;
+  color: var(--charcoal);
+}
+
+.mobile-toggle span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--charcoal);
+  margin: 5px 0;
+  transition: var(--transition);
+  border-radius: 2px;
+}
+
+.mobile-toggle.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.mobile-toggle.active span:nth-child(2) { opacity: 0; }
+
+.mobile-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: 72px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--ivory);
+  z-index: 999;
+  padding: 32px 24px;
+  overflow-y: auto;
+}
+
+.mobile-menu.active { display: block; }
+
+.mobile-menu a {
+  display: block;
+  padding: 16px 0;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: var(--charcoal);
+  border-bottom: 1px solid rgba(26,26,26,0.06);
+}
+
+.mobile-menu .btn {
+  width: 100%;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+/* Mobile Sticky CTA */
+.mobile-cta {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 998;
+  background: var(--white);
+  padding: 12px 24px;
+  box-shadow: 0 -4px 16px rgba(26,26,26,0.08);
+  border-top: 1px solid rgba(26,26,26,0.06);
+}
+
+.mobile-cta .btn {
+  width: 100%;
+  justify-content: center;
+  padding: 14px 24px;
+}
+
+/* ===== HERO ===== */
+.hero {
+  padding-top: 72px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.hero-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.15;
+}
+
+.hero-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, var(--ivory) 0%, rgba(250,248,245,0.7) 50%, rgba(250,248,245,0.3) 100%);
+}
+
+.hero-inner {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+  padding: 80px 0;
+}
+
+.hero-content { max-width: 560px; }
+
+.hero-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--bronze);
+  margin-bottom: 24px;
+}
+
+.hero-label::before {
+  content: '';
+  width: 24px;
+  height: 1.5px;
+  background: var(--bronze);
+}
+
+.hero h1 {
+  font-family: var(--font-serif);
+  font-size: clamp(2.2rem, 4.5vw, 3.5rem);
+  font-weight: 600;
+  line-height: 1.15;
+  color: var(--charcoal);
+  margin-bottom: 24px;
+}
+
+.hero h1 em {
+  font-style: italic;
+  color: var(--bronze);
+}
+
+.hero-desc {
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  color: var(--charcoal-soft);
+  margin-bottom: 36px;
+  max-width: 480px;
+}
+
+.hero-ctas {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.hero-visual {
+  position: relative;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  aspect-ratio: 4/3;
+  box-shadow: var(--shadow-xl);
+}
+
+.hero-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-visual-badge {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(10px);
+  padding: 16px 20px;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+}
+
+.hero-visual-badge strong {
+  display: block;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--charcoal);
+}
+
+.hero-visual-badge span {
+  font-size: 0.75rem;
+  color: var(--charcoal-soft);
+}
+
+/* ===== TRUST STRIP ===== */
+.trust-strip {
+  padding: 48px 0;
+  border-top: 1px solid rgba(26,26,26,0.06);
+  border-bottom: 1px solid rgba(26,26,26,0.06);
+}
+
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+
+.trust-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.trust-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--ivory-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--bronze);
+}
+
+.trust-icon svg { width: 22px; height: 22px; }
+
+.trust-text strong {
+  display: block;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--charcoal);
+}
+
+.trust-text span {
+  font-size: 0.8125rem;
+  color: var(--charcoal-soft);
+}
+
+/* ===== SECTIONS ===== */
+.section { padding: 96px 0; }
+.section-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--bronze);
+  margin-bottom: 16px;
+}
+
+.section-label::before {
+  content: '';
+  width: 24px;
+  height: 1.5px;
+  background: var(--bronze);
+}
+
+.section-title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--charcoal);
+  margin-bottom: 16px;
+}
+
+.section-subtitle {
+  font-size: 1.0625rem;
+  color: var(--charcoal-soft);
+  line-height: 1.7;
+  max-width: 560px;
+}
+
+/* ===== WHY SECTION ===== */
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-top: 48px;
+}
+
+.why-card {
+  background: var(--white);
+  border: 1px solid rgba(26,26,26,0.06);
+  border-radius: var(--radius-lg);
+  padding: 32px 28px;
+  transition: var(--transition);
+}
+
+.why-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: rgba(184,134,11,0.15);
+}
+
+.why-card-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-md);
+  background: linear-gradient(135deg, var(--ivory-dark), var(--champagne));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  color: var(--bronze-dark);
+}
+
+.why-card-icon svg { width: 26px; height: 26px; }
+
+.why-card h3 {
+  font-size: 1.0625rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--charcoal);
+}
+
+.why-card p {
+  font-size: 0.875rem;
+  color: var(--charcoal-soft);
+  line-height: 1.6;
+}
+
+/* ===== BEFORE/AFTER ===== */
+.ba-section {
+  background: var(--charcoal);
+  color: var(--white);
+  padding: 96px 0;
+}
+
+.ba-section .section-label { color: var(--bronze-light); }
+.ba-section .section-label::before { background: var(--bronze-light); }
+.ba-section .section-title { color: var(--white); }
+.ba-section .section-subtitle { color: rgba(255,255,255,0.6); }
+
+.ba-container {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.ba-slider {
+  position: relative;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  aspect-ratio: 4/3;
+  cursor: col-resize;
+  box-shadow: var(--shadow-xl);
+}
+
+.ba-slider img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ba-slider .ba-before {
+  clip-path: inset(0 50% 0 0);
+  z-index: 2;
+}
+
+.ba-slider .ba-after {
+  z-index: 1;
+}
+
+.ba-handle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 3px;
+  background: var(--white);
+  z-index: 3;
+  transform: translateX(-50%);
+}
+
+.ba-handle::after {
+  content: '⟨ ⟩';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 44px;
+  height: 44px;
+  background: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  color: var(--charcoal);
+  font-weight: 700;
+  letter-spacing: 4px;
+  box-shadow: var(--shadow-md);
+}
+
+.ba-label {
+  position: absolute;
+  top: 16px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  z-index: 4;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(8px);
+  color: var(--white);
+}
+
+.ba-label-before { left: 16px; }
+.ba-label-after { right: 16px; }
+
+.ba-info h3 {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+  color: var(--white);
+}
+
+.ba-info p {
+  color: rgba(255,255,255,0.6);
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+.ba-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.ba-stat {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: var(--radius-md);
+  padding: 20px;
+}
+
+.ba-stat strong {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--bronze-light);
+  margin-bottom: 4px;
+}
+
+.ba-stat span {
+  font-size: 0.8125rem;
+  color: rgba(255,255,255,0.5);
+}
+
+/* ===== CASE STUDIES ===== */
+.cases-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-top: 48px;
+}
+
+.case-card {
+  background: var(--white);
+  border: 1px solid rgba(26,26,26,0.06);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.case-card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-2px);
+}
+
+.case-card-img {
+  height: 220px;
+  background: var(--ivory-dark);
+  position: relative;
+  overflow: hidden;
+}
+
+.case-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.case-card-tag {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background: var(--bronze);
+  color: var(--white);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.case-card-body { padding: 28px; }
+
+.case-card-body h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.case-card-location {
+  font-size: 0.8125rem;
+  color: var(--bronze);
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.case-card-body p {
+  font-size: 0.875rem;
+  color: var(--charcoal-soft);
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.case-result {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  background: var(--ivory);
+  border-radius: var(--radius-sm);
+  margin-top: 16px;
+}
+
+.case-result-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--bronze);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  flex-shrink: 0;
+}
+
+.case-result-icon svg { width: 16px; height: 16px; }
+
+.case-result strong {
+  display: block;
+  font-size: 0.875rem;
+  color: var(--charcoal);
+}
+
+.case-result span {
+  font-size: 0.75rem;
+  color: var(--charcoal-soft);
+}
+
+/* ===== PROCESS ===== */
+.process-section {
+  background: var(--ivory-dark);
+}
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  margin-top: 48px;
+  position: relative;
+}
+
+.process-step {
+  text-align: center;
+  padding: 0 24px;
+  position: relative;
+}
+
+.process-step::after {
+  content: '';
+  position: absolute;
+  top: 28px;
+  right: -12px;
+  width: 24px;
+  height: 2px;
+  background: var(--champagne);
+}
+
+.process-step:last-child::after { display: none; }
+
+.process-num {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--white);
+  border: 2px solid var(--champagne);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--bronze);
+  position: relative;
+  z-index: 1;
+}
+
+.process-step h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.process-step p {
+  font-size: 0.8125rem;
+  color: var(--charcoal-soft);
+  line-height: 1.6;
+}
+
+/* ===== TESTIMONIALS ===== */
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 48px;
+}
+
+.testimonial-card {
+  background: var(--white);
+  border: 1px solid rgba(26,26,26,0.06);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  transition: var(--transition);
+}
+
+.testimonial-card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.testimonial-card.featured {
+  background: var(--charcoal);
+  color: var(--white);
+  border-color: transparent;
+}
+
+.testimonial-stars {
+  display: flex;
+  gap: 2px;
+  margin-bottom: 16px;
+  color: var(--bronze);
+  font-size: 0.875rem;
+}
+
+.testimonial-card p {
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  margin-bottom: 24px;
+  font-style: italic;
+}
+
+.testimonial-card.featured p { color: rgba(255,255,255,0.85); }
+
+.testimonial-author strong {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.testimonial-author span {
+  font-size: 0.75rem;
+  color: var(--charcoal-soft);
+}
+
+.testimonial-card.featured .testimonial-author span {
+  color: rgba(255,255,255,0.5);
+}
+
+/* ===== FORM SECTION ===== */
+.form-section {
+  background: var(--charcoal);
+  color: var(--white);
+  padding: 96px 0;
+}
+
+.form-section .section-label { color: var(--bronze-light); }
+.form-section .section-label::before { background: var(--bronze-light); }
+.form-section .section-title { color: var(--white); }
+.form-section .section-subtitle { color: rgba(255,255,255,0.6); }
+
+.form-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 64px;
+  margin-top: 48px;
+  align-items: start;
+}
+
+.form-info h3 {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  margin-bottom: 16px;
+}
+
+.form-info p {
+  color: rgba(255,255,255,0.6);
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+.form-benefits { list-style: none; }
+
+.form-benefits li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  font-size: 0.9375rem;
+  color: rgba(255,255,255,0.8);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.form-benefits li svg {
+  width: 20px;
+  height: 20px;
+  color: var(--bronze-light);
+  flex-shrink: 0;
+}
+
+.form-card {
+  background: var(--white);
+  border-radius: var(--radius-xl);
+  padding: 40px;
+  box-shadow: var(--shadow-xl);
+}
+
+.form-card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--charcoal);
+  margin-bottom: 4px;
+}
+
+.form-card > p {
+  font-size: 0.875rem;
+  color: var(--charcoal-soft);
+  margin-bottom: 28px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--charcoal);
+  margin-bottom: 6px;
+}
+
+.form-group label .required {
+  color: var(--bronze);
+}
+
+.form-control {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1.5px solid rgba(26,26,26,0.1);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-sans);
+  font-size: 0.9375rem;
+  color: var(--charcoal);
+  background: var(--ivory);
+  transition: var(--transition);
+  outline: none;
+}
+
+.form-control:focus {
+  border-color: var(--bronze);
+  background: var(--white);
+  box-shadow: 0 0 0 3px rgba(184,134,11,0.1);
+}
+
+.form-control.error {
+  border-color: #e74c3c;
+  box-shadow: 0 0 0 3px rgba(231,76,60,0.1);
+}
+
+.form-control::placeholder {
+  color: var(--charcoal-soft);
+  opacity: 0.5;
+}
+
+textarea.form-control {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.form-consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 20px 0 24px;
+}
+
+.form-consent input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+  accent-color: var(--bronze);
+  flex-shrink: 0;
+}
+
+.form-consent label {
+  font-size: 0.8125rem;
+  color: var(--charcoal-soft);
+  line-height: 1.5;
+}
+
+.form-consent label a {
+  color: var(--bronze);
+  text-decoration: underline;
+}
+
+.form-submit {
+  width: 100%;
+  padding: 16px;
+  background: var(--bronze);
+  color: var(--white);
+  border: none;
+  border-radius: var(--radius-md);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.form-submit:hover {
+  background: var(--bronze-dark);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(184,134,11,0.3);
+}
+
+.form-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.form-error-msg {
+  font-size: 0.75rem;
+  color: #e74c3c;
+  margin-top: 4px;
+  display: none;
+}
+
+.form-error-msg.visible { display: block; }
+
+.form-success {
+  display: none;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.form-success.visible { display: block; }
+
+.form-success svg {
+  width: 56px;
+  height: 56px;
+  color: var(--bronze);
+  margin-bottom: 16px;
+}
+
+.form-success h4 {
+  font-size: 1.25rem;
+  margin-bottom: 8px;
+}
+
+.form-success p {
+  color: var(--charcoal-soft);
+  font-size: 0.9375rem;
+}
+
+/* ===== FAQ ===== */
+.faq-list {
+  max-width: 720px;
+  margin: 48px auto 0;
+}
+
+.faq-item {
+  border-bottom: 1px solid rgba(26,26,26,0.08);
+}
+
+.faq-question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 0;
+  background: none;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--charcoal);
+  text-align: left;
+  transition: var(--transition);
+}
+
+.faq-question:hover { color: var(--bronze); }
+
+.faq-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--ivory-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: var(--transition);
+  font-size: 1.25rem;
+  color: var(--charcoal-soft);
+}
+
+.faq-item.active .faq-icon {
+  background: var(--bronze);
+  color: var(--white);
+  transform: rotate(45deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 300px;
+  padding-bottom: 24px;
+}
+
+.faq-answer p {
+  font-size: 0.9375rem;
+  color: var(--charcoal-soft);
+  line-height: 1.7;
+}
+
+/* ===== FINAL CTA ===== */
+.final-cta {
+  position: relative;
+  padding: 120px 0;
+  overflow: hidden;
+}
+
+.final-cta-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.final-cta-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.final-cta-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(26,26,26,0.92) 0%, rgba(26,26,26,0.85) 100%);
+}
+
+.final-cta-inner {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.final-cta h2 {
+  font-family: var(--font-serif);
+  font-size: clamp(1.75rem, 3.5vw, 2.75rem);
+  color: var(--white);
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.final-cta p {
+  font-size: 1.0625rem;
+  color: rgba(255,255,255,0.65);
+  margin-bottom: 36px;
+  line-height: 1.7;
+}
+
+.final-cta-btns {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ===== CONTACT ===== */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  margin-top: 48px;
+}
+
+.contact-info-list { list-style: none; }
+
+.contact-info-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(26,26,26,0.06);
+}
+
+.contact-info-list li:last-child { border-bottom: none; }
+
+.contact-info-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-sm);
+  background: var(--ivory-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--bronze);
+}
+
+.contact-info-icon svg { width: 20px; height: 20px; }
+
+.contact-info-text strong {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.contact-info-text a,
+.contact-info-text span {
+  font-size: 0.9375rem;
+  color: var(--charcoal-soft);
+  transition: var(--transition);
+}
+
+.contact-info-text a:hover { color: var(--bronze); }
+
+.contact-map {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  height: 360px;
+  border: 1px solid rgba(26,26,26,0.06);
+}
+
+.contact-map iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  background: var(--charcoal);
+  color: rgba(255,255,255,0.6);
+  padding: 64px 0 0;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+  gap: 48px;
+  padding-bottom: 48px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.footer-brand .logo {
+  color: var(--white);
+  margin-bottom: 16px;
+}
+
+.footer-brand .logo-icon {
+  background: rgba(255,255,255,0.1);
+}
+
+.footer-brand p {
+  font-size: 0.875rem;
+  line-height: 1.7;
+  max-width: 280px;
+}
+
+.footer h4 {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--bronze-light);
+  margin-bottom: 20px;
+}
+
+.footer-links a {
+  display: block;
+  padding: 6px 0;
+  font-size: 0.875rem;
+  color: rgba(255,255,255,0.6);
+  transition: var(--transition);
+}
+
+.footer-links a:hover { color: var(--white); }
+
+.footer-contact p {
+  font-size: 0.875rem;
+  margin-bottom: 8px;
+}
+
+.footer-contact a {
+  color: rgba(255,255,255,0.6);
+  transition: var(--transition);
+}
+
+.footer-contact a:hover { color: var(--white); }
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+  font-size: 0.8125rem;
+}
+
+.footer-bottom-links {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-bottom-links a {
+  color: rgba(255,255,255,0.5);
+  transition: var(--transition);
+}
+
+.footer-bottom-links a:hover { color: var(--white); }
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  .hero-inner { grid-template-columns: 1fr; gap: 48px; }
+  .hero-visual { max-width: 500px; }
+  .why-grid { grid-template-columns: repeat(2, 1fr); }
+  .ba-container { grid-template-columns: 1fr; }
+  .cases-grid { grid-template-columns: 1fr; }
+  .process-grid { grid-template-columns: repeat(2, 1fr); gap: 32px; }
+  .process-step::after { display: none; }
+  .testimonials-grid { grid-template-columns: 1fr; }
+  .form-layout { grid-template-columns: 1fr; gap: 40px; }
+  .contact-grid { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .nav-desktop { display: none; }
+  .header-phone { display: none; }
+  .mobile-toggle { display: block; }
+  .mobile-cta { display: block; }
+  body { padding-bottom: 72px; }
+
+  .hero { min-height: auto; }
+  .hero-inner { padding: 48px 0; }
+  .hero h1 { font-size: 2rem; }
+  .hero-visual { aspect-ratio: 16/10; }
+
+  .trust-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  .trust-item { gap: 12px; }
+  .trust-icon { width: 40px; height: 40px; }
+  .trust-text strong { font-size: 0.8125rem; }
+  .trust-text span { font-size: 0.75rem; }
+
+  .section { padding: 64px 0; }
+  .why-grid { grid-template-columns: 1fr; }
+  .ba-section { padding: 64px 0; }
+  .ba-stats { grid-template-columns: 1fr; }
+  .process-grid { grid-template-columns: 1fr; }
+  .form-card { padding: 24px; }
+  .form-row { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+  .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
+}
+
+@media (max-width: 480px) {
+  .trust-grid { grid-template-columns: 1fr; }
+  .hero-ctas { flex-direction: column; }
+  .hero-ctas .btn { width: 100%; justify-content: center; }
+  .final-cta-btns { flex-direction: column; align-items: center; }
+  .final-cta-btns .btn { width: 100%; max-width: 300px; justify-content: center; }
+}
+
+/* ===== ANIMATIONS ===== */
+.fade-in {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Skip link */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 16px;
+  background: var(--charcoal);
+  color: var(--white);
+  padding: 12px 24px;
+  border-radius: var(--radius-sm);
+  z-index: 10000;
+  font-weight: 600;
+}
+
+.skip-link:focus { top: 16px; }
+</style>
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<!-- HEADER -->
+<header class="header" id="header">
+  <div class="header-inner">
+    <a href="#" class="logo" aria-label="LED Solutions Canberra home">
+      <div class="logo-icon">LED</div>
+      <div class="logo-text">
+        Solutions
+        <span>Design · Supply · Install</span>
+      </div>
+    </a>
+    <nav class="nav-desktop" aria-label="Main navigation">
+      <a href="#services">Services</a>
+      <a href="#work">Our Work</a>
+      <a href="#advice">Advice</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div style="display:flex;align-items:center;gap:20px;">
+      <a href="tel:1300763122" class="header-phone" data-track="phone-header">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        1300 763 122
+      </a>
+      <a href="#quote" class="btn btn-primary btn-arrow" data-track="cta-header">Get a Quote</a>
+    </div>
+    <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Mobile navigation">
+  <a href="#services" class="mobile-nav-link">Services</a>
+  <a href="#work" class="mobile-nav-link">Our Work</a>
+  <a href="#advice" class="mobile-nav-link">Advice</a>
+  <a href="#about" class="mobile-nav-link">About</a>
+  <a href="#contact" class="mobile-nav-link">Contact</a>
+  <a href="tel:1300763122" class="mobile-nav-link" data-track="phone-mobile"> 1300 763 122</a>
+  <a href="#quote" class="btn btn-primary btn-lg btn-arrow mobile-nav-link" data-track="cta-mobile-menu">Get a Quote</a>
+</div>
+
+<!-- MOBILE STICKY CTA -->
+<div class="mobile-cta">
+  <a href="#quote" class="btn btn-primary btn-arrow" data-track="cta-mobile-sticky">Get a Free Lighting Quote</a>
+</div>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-bg">
+    <img src="https://ledsolutions.com.au/wp-content/uploads/2026/08/batch2-05.webp" alt="" loading="eager">
+  </div>
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-content fade-in">
+        <div class="hero-label">Canberra LED Lighting Specialists</div>
+        <h1>Better lighting. <em>Lower energy bills.</em> Designed for Canberra.</h1>
+        <p class="hero-desc">From a single downlight replacement to a complete home or commercial lighting plan — we design, supply and install quality LED solutions that transform your space and cut energy costs by up to 80%.</p>
+        <div class="hero-ctas">
+          <a href="#quote" class="btn btn-primary btn-lg btn-arrow" data-track="cta-hero-primary">Get a Free Lighting Quote</a>
+          <a href="#work" class="btn btn-secondary btn-lg btn-arrow" data-track="cta-hero-secondary">See Our Results</a>
+        </div>
+      </div>
+      <div class="hero-visual fade-in">
+        <img style="height: 500px;" src="https://ledsolutions.com.au/wp-content/uploads/2026/08/batch2-05.webp" alt="LED Solutions Canberra lighting installation" loading="eager">
+        <div class="hero-visual-badge">
+          <strong>57,000+</strong>
+          <span>Lights installed across Canberra</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+<section class="trust-strip" aria-label="Trust indicators">
+  <div class="container">
+    <div class="trust-grid">
+      <div class="trust-item fade-in">
+        <div class="trust-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        </div>
+        <div class="trust-text">
+          <strong>14 Years in Canberra</strong>
+          <span>Established local specialists</span>
+        </div>
+      </div>
+      <div class="trust-item fade-in">
+        <div class="trust-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        </div>
+        <div class="trust-text">
+          <strong>57,000+ Lights Installed</strong>
+          <span>Verified project history</span>
+        </div>
+      </div>
+      <div class="trust-item fade-in">
+        <div class="trust-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div class="trust-text">
+          <strong>Licensed & Fully Insured</strong>
+          <span>Licence 2009974</span>
+        </div>
+      </div>
+      <div class="trust-item fade-in">
+        <div class="trust-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        </div>
+        <div class="trust-text">
+          <strong>Workmanship Guaranteed</strong>
+          <span>Placement planned before quoting</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY LED SOLUTIONS -->
+<section class="section" id="services">
+  <div class="container">
+    <div class="fade-in">
+      <div class="section-label">Why LED Solutions</div>
+      <h2 class="section-title">One team to plan, supply and install your lighting.</h2>
+      <p class="section-subtitle">Most lighting problems are created before the electrician arrives — wrong spacing, cheap drivers, cold colour, too many downlights. We get it right from the start.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card fade-in">
+        <div class="why-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+        </div>
+        <h3>Assessment</h3>
+        <p>We evaluate your space, existing lighting, pain points and the feeling you want — before any holes are cut.</p>
+      </div>
+      <div class="why-card fade-in">
+        <div class="why-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+        </div>
+        <h3>Lighting Design</h3>
+        <p>Zones, spacing, beam angle and switching — planned around how you actually use each room.</p>
+      </div>
+      <div class="why-card fade-in">
+        <div class="why-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+        </div>
+        <h3>Product Selection</h3>
+        <p>Quality fittings, correct colour temperature, dimming and controls — matched to your budget and goals.</p>
+      </div>
+      <div class="why-card fade-in">
+        <div class="why-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+        </div>
+        <h3>Installation</h3>
+        <p>Clean workmanship, testing, and aftercare. We leave your space better than we found it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BEFORE / AFTER -->
+<section class="ba-section" id="work">
+  <div class="container">
+    <div class="fade-in">
+      <div class="section-label">See the Difference</div>
+      <h2 class="section-title">Better lighting is not more light.<br>It is the right light in the right place.</h2>
+      <p class="section-subtitle">Drag the slider to compare before and after a typical Canberra downlight upgrade.</p>
+    </div>
+    <div class="ba-container">
+      <div class="ba-slider fade-in" id="baSlider" role="img" aria-label="Before and after lighting comparison slider">
+        <img class="ba-after" src="https://cdn.prod.website-files.com/65eede53df668d7015c0bd8c/6974d1c145d0017d7cb5e373_hero-89bce039.png?w=800&q=80" alt="After: Bright, well-lit modern interior" loading="lazy">
+        <img class="ba-before" src="https://nevadacounty4sale.com/wp-content/uploads/coldwell-banker-lighting-living-room.jpg?w=800&q=80&sat=-100&bri=-30" alt="Before: Dim, poorly lit interior" loading="lazy" style="filter:brightness(0.4) saturate(0.3);">
+        <div class="ba-handle" id="baHandle"></div>
+        <span class="ba-label ba-label-before">Before</span>
+        <span class="ba-label ba-label-after">After</span>
+      </div>
+      <div class="ba-info fade-in">
+        <h3>Typical Halogen to LED Upgrade</h3>
+        <p>A quality downlight in the wrong place still creates glare, shadows or a flat-looking room. We plan placement first, then select the right product for each zone.</p>
+        <div class="ba-stats">
+          <div class="ba-stat">
+            <strong>80%</strong>
+            <span>Energy reduction</span>
+          </div>
+          <div class="ba-stat">
+            <strong>50,000h</strong>
+            <span>LED lifespan</span>
+          </div>
+          <div class="ba-stat">
+            <strong>3–5 yr</strong>
+            <span>Payback period</span>
+          </div>
+          <div class="ba-stat">
+            <strong>0</strong>
+            <span>Repeat callouts</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CASE STUDIES -->
+<section class="section" id="cases">
+  <div class="container">
+    <div class="fade-in">
+      <div class="section-label">Recent Projects</div>
+      <h2 class="section-title">Commercial case studies.</h2>
+      <p class="section-subtitle">Real projects, real results. Every figure below is verified from completed work.</p>
+    </div>
+    <div class="cases-grid">
+      <div class="case-card fade-in">
+        <div class="case-card-img">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjAqRNZnBqHPteT--dYQy_XE0ulVdiT1jnkgGCi_KuFRYztiV0SIQ8sYY&s=10?v=1767603263?w=600&q=80" alt="Commercial office lighting upgrade" loading="lazy">
+          <span class="case-card-tag">Commercial</span>
+        </div>
+        <div class="case-card-body">
+          <h3>Office Lighting Upgrade</h3>
+          <div class="case-card-location">Canberra ACT — Commercial Fitout</div>
+          <p><strong>Challenge:</strong> Flickering fluorescent tubes, uneven brightness, and high energy costs across a 42-unit common area.</p>
+          <p><strong>Solution:</strong> Complete LED downlight replacement with balanced placement, correct colour temperature and sensor controls.</p>
+          <div class="case-result">
+            <div class="case-result-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/></svg>
+            </div>
+            <div>
+              <strong>72% energy reduction</strong>
+              <span>Verified payback within 3 years</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="case-card fade-in">
+        <div class="case-card-img">
+          <img src="https://cdn.shopify.com/s/files/1/0648/5478/6148/articles/Home_Renovation_Ideas_Transform_Your_Space_with_LED_Lighting_1cf1a926-afba-496c-9930-ae67bb555007.jpg?w=600&q=80" alt="Residential lighting renovation" loading="lazy">
+          <span class="case-card-tag">Residential</span>
+        </div>
+        <div class="case-card-body">
+          <h3>Whole Home Renovation</h3>
+          <div class="case-card-location">Deakin, ACT — Residential</div>
+          <p><strong>Challenge:</strong> Outdated halogen downlights throughout a family home — wrong spacing, cold colour, high running costs.</p>
+          <p><strong>Solution:</strong> Full lighting plan with warm-white LED downlights, dimming zones, and quality fittings matched to each room's use.</p>
+          <div class="case-result">
+            <div class="case-result-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <div>
+              <strong>"The home feels warmer, brighter and it just works."</strong>
+              <span>James & Kate Morrison, 2025</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="section process-section" id="about">
+  <div class="container">
+    <div class="fade-in" style="text-align:center;">
+      <div class="section-label" style="justify-content:center;">How We Work</div>
+      <h2 class="section-title">Four steps to better lighting.</h2>
+      <p class="section-subtitle" style="margin:0 auto;">A clear, proven process — from first assessment to final install and aftercare.</p>
+    </div>
+    <div class="process-grid">
+      <div class="process-step fade-in">
+        <div class="process-num">01</div>
+        <h3>Assess</h3>
+        <p>Your space, plans, pain points and the feeling you want. We listen before we plan.</p>
+      </div>
+      <div class="process-step fade-in">
+        <div class="process-num">02</div>
+        <h3>Plan</h3>
+        <p>Zones, spacing, beam angle and switching — designed around how you live and work.</p>
+      </div>
+      <div class="process-step fade-in">
+        <div class="process-num">03</div>
+        <h3>Specify</h3>
+        <p>Quality fittings, colour, dimming and controls — matched to your budget and goals.</p>
+      </div>
+      <div class="process-step fade-in">
+        <div class="process-num">04</div>
+        <h3>Install</h3>
+        <p>Clean workmanship, testing and aftercare. We stand behind every light we install.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section">
+  <div class="container">
+    <div class="fade-in">
+      <div class="section-label">Trusted Locally</div>
+      <h2 class="section-title">14 years and more than 57,000 lights installed across Canberra.</h2>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card fade-in">
+        <div class="testimonial-stars">★★★★★</div>
+        <p>"LED Solutions planned the lighting for our renovation and the difference is incredible. The home feels warmer, brighter and it just works."</p>
+        <div class="testimonial-author">
+          <strong>James & Kate Morrison</strong>
+          <span>Deakin — Whole Home Renovation, 2025</span>
+        </div>
+      </div>
+      <div class="testimonial-card fade-in">
+        <div class="testimonial-stars">★★★★★</div>
+        <p>"They fixed the flickering downlights three other electricians couldn't. Clean, on time, and they explained everything as they went."</p>
+        <div class="testimonial-author">
+          <strong>Strata Manager</strong>
+          <span>Braddon — 42-Unit Common Area Maintenance</span>
+        </div>
+      </div>
+      <div class="testimonial-card featured fade-in">
+        <div class="testimonial-stars">★★★★★</div>
+        <p>"My first client, fourteen years ago, still hasn't had to change a downlight."</p>
+        <div class="testimonial-author">
+          <strong>Kieran</strong>
+          <span>Founder, LED Solutions Canberra</span>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:32px;">
+      <a href="#" class="btn btn-secondary btn-arrow" data-track="cta-google-reviews">Read our Google reviews →</a>
+    </div>
+    <div style="text-align:center;margin-top:48px;" id="advice">
+      <div class="fade-in" style="background:var(--white);border:1px solid rgba(26,26,26,0.06);border-radius:var(--radius-lg);padding:40px;max-width:720px;margin:0 auto;">
+        <div class="section-label">Free Lighting Advice</div>
+        <h3 class="section-title" style="font-size:1.5rem;">Lighting advice that helps you avoid expensive mistakes.</h3>
+        <p style="color:var(--charcoal-soft);font-size:0.9375rem;margin-bottom:24px;">Why cheap downlights fail early, why spacing matters more than quantity, how colour temperature changes a room, and what to decide before plaster goes up.</p>
+        <a href="#" class="btn btn-secondary btn-arrow" data-track="cta-guides">Read the guides →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FORM SECTION -->
+<section class="form-section" id="quote">
+  <div class="container">
+    <div class="fade-in">
+      <div class="section-label">Get Started</div>
+      <h2 class="section-title">Get a quote for your lighting project.</h2>
+      <p class="section-subtitle">Tell us what you want to change. We reply within one business day, or call 1300 763 122.</p>
+    </div>
+    <div class="form-layout">
+      <div class="form-info fade-in">
+        <h3>What to expect</h3>
+        <p>No obligation, no pressure. Just an honest assessment and a clear quote based on your actual needs.</p>
+        <ul class="form-benefits">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            Free quote, no obligation
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            Reply within one business day
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            Your details are never shared
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            Placement planned before quoting
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            Licensed, insured and local
+          </li>
+        </ul>
+      </div>
+      <div class="form-card fade-in" id="formCard">
+        <h3>Request My Quote</h3>
+        <p>Fill in the form below and we'll be in touch within one business day.</p>
+        <form id="quoteForm" novalidate>
+          <div class="form-group">
+            <label for="projectType">Project type <span class="required">*</span></label>
+            <select class="form-control" id="projectType" name="projectType" required>
+              <option value="" disabled selected>Choose the closest option</option>
+              <option value="residential-downlight">Residential downlight replacement</option>
+              <option value="residential-new">Residential new build / renovation</option>
+              <option value="commercial">Commercial lighting upgrade</option>
+              <option value="strata">Strata repairs & planned maintenance</option>
+              <option value="builder">Builder / architect — lighting before rough-in</option>
+              <option value="other">Other / not sure yet</option>
+            </select>
+            <div class="form-error-msg" id="projectTypeError">Please select a project type.</div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name <span class="required">*</span></label>
+              <input type="text" class="form-control" id="name" name="name" placeholder="Your full name" required>
+              <div class="form-error-msg" id="nameError">Please enter your name.</div>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone <span class="required">*</span></label>
+              <input type="tel" class="form-control" id="phone" name="phone" placeholder="04XX XXX XXX" required>
+              <div class="form-error-msg" id="phoneError">Please enter a valid phone number.</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email <span class="required">*</span></label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="your@email.com" required>
+            <div class="form-error-msg" id="emailError">Please enter a valid email address.</div>
+          </div>
+          <div class="form-group">
+            <label for="details">What do you need help with?</label>
+            <textarea class="form-control" id="details" name="details" placeholder="Example: kitchen downlights, flickering lights, plans ready, preferred timing..."></textarea>
+          </div>
+          <div class="form-consent">
+            <input type="checkbox" id="consent" name="consent" required>
+            <label for="consent">I agree to LED Solutions contacting me about my enquiry. Your details are never shared. See our <a href="#">Privacy Policy</a>.</label>
+          </div>
+          <button type="submit" class="form-submit" id="submitBtn" data-track="form-submit">Request My Quote</button>
+        </form>
+        <div class="form-success" id="formSuccess">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          <h4>Quote request received!</h4>
+          <p>Thanks — we'll be in touch within one business day. If it's urgent, call us on 1300 763 122.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq">
+  <div class="container">
+    <div class="fade-in" style="text-align:center;">
+      <div class="section-label" style="justify-content:center;">Common Questions</div>
+      <h2 class="section-title">Frequently asked questions.</h2>
+    </div>
+    <div class="faq-list fade-in">
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>What does a lighting assessment involve?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>We evaluate your existing lighting, room usage, natural light, ceiling type and your goals. For new builds or renovations, we work from your plans. The assessment informs a placement plan before any quote is issued — so you're never paying for lights you don't need.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>How much can I save by switching to LED?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Most Canberra homes and businesses see 70–80% reduction in lighting energy costs after a quality LED upgrade. Combined with longer lifespan (50,000+ hours vs 1,000 for halogen), typical payback is 3–5 years. We can estimate your specific savings during the quote process.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>How long does a typical installation take?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>A single-room downlight replacement can be completed in half a day. A whole-home upgrade typically takes 1–3 days depending on scope. Commercial and strata projects are scheduled to minimise disruption. We confirm timelines in your quote.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>Do you supply the products or can I buy my own?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>We supply and install as a complete package — this ensures compatibility, warranty coverage and performance. We only specify products we've tested and stand behind. If you have specific product requirements, we're happy to discuss during the assessment.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>Are you licensed and insured?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Yes. LED Solutions Canberra holds Licence 2009974 and is fully insured. We've been operating in Canberra for 14 years with over 57,000 lights installed. All work comes with a workmanship guarantee.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>What areas of Canberra do you service?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>We service all of Canberra and the surrounding ACT region. For commercial and strata projects, we also service nearby NSW regions. Contact us to confirm coverage for your specific location.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+  <div class="final-cta-bg">
+    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1400&q=80" alt="" loading="lazy">
+  </div>
+  <div class="container">
+    <div class="final-cta-inner fade-in">
+      <h2>Ready to improve the lighting in your home or business?</h2>
+      <p>Tell us what you're working on and we'll help you choose the right next step, from a simple downlight upgrade to a complete lighting plan.</p>
+      <div class="final-cta-btns">
+        <a href="#quote" class="btn btn-primary btn-lg btn-arrow" data-track="cta-final-primary">Get a Lighting Quote</a>
+        <a href="tel:1300763122" class="btn btn-outline-light btn-lg" data-track="cta-final-phone">Call 1300 763 122</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <div class="container">
+    <div class="fade-in">
+      <div class="section-label">Get in Touch</div>
+      <h2 class="section-title">Contact LED Solutions Canberra.</h2>
+      <p class="section-subtitle">Call, email, or fill in the quote form above. We reply within one business day.</p>
+    </div>
+    <div class="contact-grid fade-in">
+      <ul class="contact-info-list">
+        <li>
+          <div class="contact-info-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          </div>
+          <div class="contact-info-text">
+            <strong>Phone</strong>
+            <a href="tel:1300763122" data-track="phone-contact">1300 763 122</a>
+          </div>
+        </li>
+        <li>
+          <div class="contact-info-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          </div>
+          <div class="contact-info-text">
+            <strong>Kieran (Mobile)</strong>
+            <a href="tel:0415343050" data-track="phone-kieran">0415 343 050</a>
+          </div>
+        </li>
+        <li>
+          <div class="contact-info-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <div class="contact-info-text">
+            <strong>Email</strong>
+            <a href="mailto:kieran@ledsolutions.com.au" data-track="email-contact">kieran@ledsolutions.com.au</a>
+          </div>
+        </li>
+        <li>
+          <div class="contact-info-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div class="contact-info-text">
+            <strong>Location</strong>
+            <span>Canberra, ACT</span>
+          </div>
+        </li>
+      </ul>
+      <div class="contact-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104351.73880090988!2d149.0435!3d-35.2835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b164d69b05c90c1%3A0x500ea6ea6398f90!2sCanberra%20ACT!5e0!3m2!1sen!2sau!4v1700000000000!5m2!1sen!2sau" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="LED Solutions Canberra location map"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <div class="logo-icon">LED</div>
+          <div class="logo-text">
+            Solutions
+            <span>Design · Supply · Install</span>
+          </div>
+        </a>
+        <p>Canberra LED lighting planning, supply and installation for homes, renovations, builders, architects, strata and commercial properties.</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <div class="footer-links">
+          <a href="#services">LED downlights</a>
+          <a href="#services">Residential lighting</a>
+          <a href="#services">Commercial lighting</a>
+          <a href="#services">Strata maintenance</a>
+        </div>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <div class="footer-links">
+          <a href="#work">Our Work</a>
+          <a href="#about">About Kieran</a>
+          <a href="#advice">Lighting advice</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p><a href="tel:1300763122">1300 763 122</a></p>
+        <p><a href="mailto:kieran@ledsolutions.com.au">kieran@ledsolutions.com.au</a></p>
+        <p>Canberra ACT</p>
+        <p style="font-size:0.75rem;margin-top:8px;opacity:0.6;">Licence 2009974 · ABN 51 163 611 452</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 LED Solutions. All rights reserved. Developed by Zannatul.</span>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms</a>
+        <span>Canberra lighting specialists.</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+// ===== HEADER SCROLL =====
+const header = document.getElementById('header');
+let lastScroll = 0;
+window.addEventListener('scroll', () => {
+  const currentScroll = window.pageYOffset;
+  if (currentScroll > 50) {
+    header.classList.add('scrolled');
+  } else {
+    header.classList.remove('scrolled');
+  }
+  lastScroll = currentScroll;
+});
+
+// ===== MOBILE MENU =====
+const mobileToggle = document.getElementById('mobileToggle');
+const mobileMenu = document.getElementById('mobileMenu');
+
+mobileToggle.addEventListener('click', () => {
+  const isActive = mobileMenu.classList.toggle('active');
+  mobileToggle.classList.toggle('active');
+  mobileToggle.setAttribute('aria-expanded', isActive);
+  document.body.style.overflow = isActive ? 'hidden' : '';
+});
+
+// Close mobile menu on link click
+document.querySelectorAll('.mobile-nav-link').forEach(link => {
+  link.addEventListener('click', () => {
+    mobileMenu.classList.remove('active');
+    mobileToggle.classList.remove('active');
+    mobileToggle.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  });
+});
+
+// ===== BEFORE/AFTER SLIDER =====
+const baSlider = document.getElementById('baSlider');
+const baHandle = document.getElementById('baHandle');
+const baBefore = baSlider.querySelector('.ba-before');
+let isDragging = false;
+
+function updateSlider(x) {
+  const rect = baSlider.getBoundingClientRect();
+  let pos = ((x - rect.left) / rect.width) * 100;
+  pos = Math.max(5, Math.min(95, pos));
+  baBefore.style.clipPath = `inset(0 ${100 - pos}% 0 0)`;
+  baHandle.style.left = pos + '%';
+}
+
+baSlider.addEventListener('mousedown', (e) => {
+  isDragging = true;
+  updateSlider(e.clientX);
+  trackEvent('ba_slider_interaction');
+});
+
+document.addEventListener('mousemove', (e) => {
+  if (isDragging) {
+    e.preventDefault();
+    updateSlider(e.clientX);
+  }
+});
+
+document.addEventListener('mouseup', () => { isDragging = false; });
+
+baSlider.addEventListener('touchstart', (e) => {
+  isDragging = true;
+  updateSlider(e.touches[0].clientX);
+  trackEvent('ba_slider_interaction');
+}, { passive: true });
+
+document.addEventListener('touchmove', (e) => {
+  if (isDragging) {
+    updateSlider(e.touches[0].clientX);
+  }
+}, { passive: true });
+
+document.addEventListener('touchend', () => { isDragging = false; });
+
+// ===== FAQ ACCORDION =====
+document.querySelectorAll('.faq-question').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const item = btn.parentElement;
+    const isActive = item.classList.contains('active');
+    
+    // Close all
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+    document.querySelectorAll('.faq-question').forEach(b => b.setAttribute('aria-expanded', 'false'));
+    
+    // Toggle current
+    if (!isActive) {
+      item.classList.add('active');
+      btn.setAttribute('aria-expanded', 'true');
+    }
+  });
+});
+
+// ===== FORM VALIDATION =====
+const quoteForm = document.getElementById('quoteForm');
+const submitBtn = document.getElementById('submitBtn');
+const formSuccess = document.getElementById('formSuccess');
+
+function validateField(field, errorId, validator) {
+  const error = document.getElementById(errorId);
+  const isValid = validator(field.value.trim());
+  
+  if (!isValid) {
+    field.classList.add('error');
+    if (error) error.classList.add('visible');
+    return false;
+  } else {
+    field.classList.remove('error');
+    if (error) error.classList.remove('visible');
+    return true;
+  }
+}
+
+// Real-time validation
+['name', 'phone', 'email', 'projectType'].forEach(id => {
+  const field = document.getElementById(id);
+  if (field) {
+    field.addEventListener('blur', () => {
+      validateField(field, id + 'Error', getValidator(id));
+    });
+    field.addEventListener('input', () => {
+      if (field.classList.contains('error')) {
+        validateField(field, id + 'Error', getValidator(id));
+      }
+    });
+  }
+});
+
+function getValidator(id) {
+  switch(id) {
+    case 'name': return v => v.length >= 2;
+    case 'phone': return v => /^[\d\s\+\-\(\)]{8,}$/.test(v);
+    case 'email': return v => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
+    case 'projectType': return v => v !== '';
+    default: return () => true;
+  }
+}
+
+quoteForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  
+  const fields = ['projectType', 'name', 'phone', 'email'];
+  let allValid = true;
+  
+  fields.forEach(id => {
+    const field = document.getElementById(id);
+    if (!validateField(field, id + 'Error', getValidator(id))) {
+      allValid = false;
+    }
+  });
+  
+  const consent = document.getElementById('consent');
+  if (!consent.checked) {
+    allValid = false;
+  }
+  
+  if (allValid) {
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending...';
+    trackEvent('form_submission');
+    
+    // Simulate submission
+    setTimeout(() => {
+      quoteForm.style.display = 'none';
+      formSuccess.classList.add('visible');
+    }, 1200);
+  } else {
+    trackEvent('form_validation_error');
+  }
+});
+
+// Track form start
+quoteForm.addEventListener('focus', () => {
+  trackEvent('form_start');
+}, { once: true });
+
+// ===== SCROLL ANIMATIONS =====
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+// ===== ANALYTICS TRACKING =====
+function trackEvent(eventName, data = {}) {
+  console.log('[Analytics]', eventName, data);
+  // In production, this would send to Google Analytics, etc.
+  if (typeof gtag !== 'undefined') {
+    gtag('event', eventName, data);
+  }
+}
+
+// Track CTA clicks
+document.querySelectorAll('[data-track]').forEach(el => {
+  el.addEventListener('click', () => {
+    trackEvent(el.dataset.track);
+  });
+});
+
+// ===== SMOOTH SCROLL FOR ANCHOR LINKS =====
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      const offset = 80;
+      const top = target.getBoundingClientRect().top + window.pageYOffset - offset;
+      window.scrollTo({ top, behavior: 'smooth' });
+    }
+  });
+});
+</script>
+</body>
+</html>
